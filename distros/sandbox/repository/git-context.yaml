@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: git-context
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    kpt.dev/config-injection: "required"
+data:
+  provider: example
+  org: example
+  url: "http://172.18.0.200:3000"

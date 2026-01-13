@@ -15,6 +15,10 @@ spec:
   injectors:
   - kind: WorkloadCluster
     name: example
+  - group: ""
+    version: v1
+    kind: ConfigMap
+    name: git-context
   pipeline:
     mutators:
     - image: ghcr.io/kptdev/krm-functions-catalog/set-annotations:v0.1.4
